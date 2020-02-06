@@ -1,0 +1,5 @@
+Saya sedang belajar ruby
+Ruby adalah bahasa pemrograman yang kerenRails
+Django
+Laravel
+Spring

@@ -5,11 +5,11 @@
 # puts halo
 
 # # Def with Return
-# def hai
-#     return 'Saya disini !' # => yang didahulukan
-#     'Saya disini '
-# end
-# puts hai
+def hai
+    return 'Saya disini !' # => yang didahulukan
+    'Saya disini '
+end
+puts hai
 
 # # Parameter
 # def numeric(angka1, angka2)
@@ -33,18 +33,18 @@
 # kirim(nama: 'rudi')
 # kirim(email: '@gmail')
 
-# Variabel sebagai method
-cetak = Proc.new{
-    puts 'Cetak kata'
-}
-cetak.call()
+# # Variabel sebagai method
+# cetak = Proc.new{
+#     puts 'Cetak kata'
+# }
+# cetak.call()
 
-methode = Proc.new do |nama,user|
-    puts nama
-    puts user
-end
-methode.call('virgi,user')
-methode['sadfsadf', 'wkwkwkwk']
+# methode = Proc.new do |nama,user|
+#     puts nama
+#     puts user
+# end
+# methode.call('virgi,user')
+# methode['sadfsadf', 'wkwkwkwk']
 
 # pembagian = -> (angka1, angka) do
 #     angka1 / angka
