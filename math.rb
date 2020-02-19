@@ -19,3 +19,7 @@ puts 13.even?
 puts 12.odd?
 puts 13.odd?
 puts 12.even?
+
+# Aritmatik Printing
+puts 4/3
+puts 4/3.0

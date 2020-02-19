@@ -41,6 +41,7 @@
 # arr3.delete_if do |item|
 #     item == 'A'
 # end
+# puts "#{arr3}"
 
 # # One line
 # arr3.delete_if { |item| item == 'B'}
@@ -50,12 +51,13 @@
 # puts [1,2,3,4,5].join(',')
 # puts [1,2,3,4,5].join(' ')
 
-# # Push : Menambahkan item pada array
-# arr = [1,2,3,4,5]
-# arr.push(6)
-# puts "#{arr}"
-# arr.push(6,7,8)
-# puts "#{arr}"
+# Push : Menambahkan item pada array
+arr = [1,2,3,4,5]
+arr.push(6)
+puts "#{arr}"
+arr.push(6,7,8)
+arr << 10
+puts "#{arr}"
 
 # # Pop : Menghapus jumlah item dari belakang
 # arr = [1,2,3,4,5]
@@ -122,23 +124,23 @@
 
 # Filter cara tradisional #
 
-array = [60, 70, 80, 100, 65]
+# array = [60, 70, 80, 100, 65]
 
-arrayBaru = []
-array.each do |item|
-    if item >= 70
-        arrayBaru << item
-    end
-end
+# arrayBaru = []
+# array.each do |item|
+#     if item >= 70
+#         arrayBaru << item
+#     end
+# end
 
-# Select #
+# # Select #
 
-arrayBaru = array.select do |item|
-    item < 101
-end
-puts "#{arrayBaru.shuffle}"
+# arrayBaru = array.select do |item|
+#     item < 101
+# end
+# puts "#{arrayBaru.shuffle}"
 
-# One line select #
+# # One line select #
 
-puts "#{array.select {|item| item < 101}}"
+# puts "#{array.select {|item| item < 101}}"
 

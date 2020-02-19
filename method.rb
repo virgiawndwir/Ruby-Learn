@@ -5,11 +5,11 @@
 # puts halo
 
 # # Def with Return
-def hai
-    return 'Saya disini !' # => yang didahulukan
-    'Saya disini '
-end
-puts hai
+# def hai
+#     # return 'Saya disini !' # => yang didahulukan
+#     'Saya disini '
+# end
+# puts hai
 
 # # Parameter
 # def numeric(angka1, angka2)
@@ -33,7 +33,7 @@ puts hai
 # kirim(nama: 'rudi')
 # kirim(email: '@gmail')
 
-# # Variabel sebagai method
+# Variabel sebagai method
 # cetak = Proc.new{
 #     puts 'Cetak kata'
 # }
@@ -51,15 +51,16 @@ puts hai
 # end
 # puts pembagian.call(12,3)
 
-# # splat method
-# def menu(*item)
-#     puts item[0]
-#     puts item[1]
-#     puts item[2]
-#     puts item[3]
-# end
-# array1 = ['siapa','rumah','lokasi','disana']
-# menu(array1)
+# splat method
+def menu(*item)
+    puts item[0]
+    puts item[1]
+    puts item[2]
+    puts item[3]
+    puts item[4]
+end
+array1 = ['siapa','rumah','lokasi','disana', 'ASDF']
+menu(array1)
 # menu(['siapa','rumah','lokasi','disana'])
 
 # # array parameter
