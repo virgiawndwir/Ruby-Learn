@@ -401,3 +401,48 @@ puts FacebookConnection.status
 facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
 puts FacebookConnection.version
 puts FacebookConnection.status
+
+
+### Module dan Constrant
+
+## Module => kumpulan dari class, method, atau constants
+
+module ModuleName
+    XXX = 100
+
+    LOKAL = 'lokal variabel'
+
+    def method
+        puts 'method dari dalam konstan'
+    end
+
+    module A
+        XXX = 200
+    end
+end
+
+puts ModuleName::XXX
+puts ModuleName::LOKAL
+puts ModuleName::A::XXX
+
+module Kerenz
+    class ApiConnection
+        def connect
+            puts 'koneksi dari Kerenz::ApiConnection'
+        end
+    end
+end
+
+module Kool
+    class ApiConnection
+        def connect
+            puts 'koneksi dari Kool::ApiConnection'
+        end 
+    end
+end
+
+con = Kerenz::ApiConnection.new
+con.connect
+
+con = Kool::ApiConnection.new
+con.connect
