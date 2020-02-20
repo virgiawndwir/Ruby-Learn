@@ -48,6 +48,9 @@
 
 # # OBJECT ORIENTED PROGRAMMING - Getter-Setter
 
+### => 
+### Setter => method yang berfungsi 
+
 # class Print
 #     def initialize(text)
 #         @text = text
