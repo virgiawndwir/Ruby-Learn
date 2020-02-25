@@ -21,27 +21,27 @@
 
 # # OBJECT ORIENTED PROGRAMMING - Constructor
 
-class CalculatorKool
-    def initialize(a,b) # -> Method initialize harus ada
-        @parameter_a = a # -> @ adalah variabel umum pada class 
-        @parameter_b = b # -> @ bisa dipakai dipakai method yang sama 
-        @lokal = a + b   # -> @ masih dalam satu Class
-    end
+# class CalculatorKool
+#     def initialize(a,b) # -> Method initialize harus ada
+#         @parameter_a = a # -> @ adalah variabel umum pada class 
+#         @parameter_b = b # -> @ bisa dipakai dipakai method yang sama 
+#         @lokal = a + b   # -> @ masih dalam satu Class
+#     end
 
-    def penjumlahan
-        @parameter_a + @parameter_b
-    end
+#     def penjumlahan
+#         @parameter_a + @parameter_b
+#     end
 
-    def perkalian 
-        @parameter_a * @parameter_b
-    end
-end
+#     def perkalian 
+#         @parameter_a * @parameter_b
+#     end
+# end
 
-calc = CalculatorKool.new(10,5) # Parameter atau isi dari initialize
-hasil_plus = calc.penjumlahan
-puts hasil_plus
-hasil_minus = calc.perkalian
-puts hasil_minus
+# calc = CalculatorKool.new(10,5) # Parameter atau isi dari initialize
+# hasil_plus = calc.penjumlahan
+# puts hasil_plus
+# hasil_minus = calc.perkalian
+# puts hasil_minus
 
 
 
@@ -303,146 +303,146 @@ puts hasil_minus
 
 ## API CONNECTION ##
 
-class ApiConnection
+# class ApiConnection
 
-    attr_accessor :url, :name
-    def initialize(url, name)
-        @url = url
-        @name = name
-    end
+#     attr_accessor :url, :name
+#     def initialize(url, name)
+#         @url = url
+#         @name = name
+#     end
 
-    def connect
-        @connect = true # logika program disini
-    end
-    def status
-        if @connect
-            :conected
-        else
-            :unconnected
-        end
-    end
-end
+#     def connect
+#         @connect = true # logika program disini
+#     end
+#     def status
+#         if @connect
+#             :conected
+#         else
+#             :unconnected
+#         end
+#     end
+# end
 
-class FacebookConnection < ApiConnection
-    def version
-        1
-    end
+# class FacebookConnection < ApiConnection
+#     def version
+#         1
+#     end
 
-    def status
-        :connected
-    end
-end
-facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
+#     def status
+#         :connected
+#     end
+# end
+# facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
 
-status = facebook_connection.status
-version = facebook_connection.version
+# status = facebook_connection.status
+# version = facebook_connection.version
 
-puts status
-puts version
+# puts status
+# puts version
 
-## SUPER METHOD ##
+# ## SUPER METHOD ##
 
-class ApiConnection
+# class ApiConnection
 
-    attr_accessor :url, :name
-    def initialize(url, name)
-        @url = url
-        @name = name
-    end
+#     attr_accessor :url, :name
+#     def initialize(url, name)
+#         @url = url
+#         @name = name
+#     end
 
-    def connect
-        @connect = true # logika program disini
-    end
-    def status
-        if @connect
-            :conected
-        else
-            :unconnected
-        end
-    end
-end
+#     def connect
+#         @connect = true # logika program disini
+#     end
+#     def status
+#         if @connect
+#             :conected
+#         else
+#             :unconnected
+#         end
+#     end
+# end
 
-class FacebookConnection < ApiConnection
-    def version
-        1
-    end
-    def connect
-        super 
-        puts 'connection established'
-    end
-    def status
-        super
-    end
-end
-facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
+# class FacebookConnection < ApiConnection
+#     def version
+#         1
+#     end
+#     def connect
+#         super 
+#         puts 'connection established'
+#     end
+#     def status
+#         super
+#     end
+# end
+# facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
 
-facebook_connection.connect
-status = facebook_connection.status
-version = facebook_connection.version
-puts status
-puts version
+# facebook_connection.connect
+# status = facebook_connection.status
+# version = facebook_connection.version
+# puts status
+# puts version
 
-## Class Self ##
+# ## Class Self ##
 
-class FacebookConnection < ApiConnection
-    class << self 
-        def version 
-            2
-        end
-        def status 
-            :connected
-        end
-    end
-end
+# class FacebookConnection < ApiConnection
+#     class << self 
+#         def version 
+#             2
+#         end
+#         def status 
+#             :connected
+#         end
+#     end
+# end
 
-puts FacebookConnection.version
-puts FacebookConnection.status
+# puts FacebookConnection.version
+# puts FacebookConnection.status
 
-facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
-puts FacebookConnection.version
-puts FacebookConnection.status
+# facebook_connection = FacebookConnection.new('https://facebook.com', 'facebook')
+# puts FacebookConnection.version
+# puts FacebookConnection.status
 
 
-### Module dan Constrant
+# ### Module dan Constrant
 
-## Module => kumpulan dari class, method, atau constants
+# ## Module => kumpulan dari class, method, atau constants
 
-module ModuleName
-    XXX = 100
+# module ModuleName
+#     XXX = 100
 
-    LOKAL = 'lokal variabel'
+#     LOKAL = 'lokal variabel'
 
-    def method
-        puts 'method dari dalam konstan'
-    end
+#     def method
+#         puts 'method dari dalam konstan'
+#     end
 
-    module A
-        XXX = 200
-    end
-end
+#     module A
+#         XXX = 200
+#     end
+# end
 
-puts ModuleName::XXX
-puts ModuleName::LOKAL
-puts ModuleName::A::XXX
+# puts ModuleName::XXX
+# puts ModuleName::LOKAL
+# puts ModuleName::A::XXX
 
-module Kerenz
-    class ApiConnection
-        def connect
-            puts 'koneksi dari Kerenz::ApiConnection'
-        end
-    end
-end
+# module Kerenz
+#     class ApiConnection
+#         def connect
+#             puts 'koneksi dari Kerenz::ApiConnection'
+#         end
+#     end
+# end
 
-module Kool
-    class ApiConnection
-        def connect
-            puts 'koneksi dari Kool::ApiConnection'
-        end 
-    end
-end
+# module Kool
+#     class ApiConnection
+#         def connect
+#             puts 'koneksi dari Kool::ApiConnection'
+#         end 
+#     end
+# end
 
-con = Kerenz::ApiConnection.new
-con.connect
+# con = Kerenz::ApiConnection.new
+# con.connect
 
-con = Kool::ApiConnection.new
-con.connect
+# con = Kool::ApiConnection.new
+# con.connect
