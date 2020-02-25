@@ -21,27 +21,27 @@
 
 # # OBJECT ORIENTED PROGRAMMING - Constructor
 
-# class CalculatorKool
-#     def initialize(a,b) # -> Method initialize harus ada
-#         @parameter_a = a # -> @ adalah variabel umum pada class 
-#         @parameter_b = b # -> @ bisa dipakai dipakai method yang sama 
-#         @lokal = a + b   # -> @ masih dalam satu Class
-#     end
+class CalculatorKool
+    def initialize(a,b) # -> Method initialize harus ada
+        @parameter_a = a # -> @ adalah variabel umum pada class 
+        @parameter_b = b # -> @ bisa dipakai dipakai method yang sama 
+        @lokal = a + b   # -> @ masih dalam satu Class
+    end
 
-#     def penjumlahan
-#         @parameter_a + @parameter_b
-#     end
+    def penjumlahan
+        @parameter_a + @parameter_b
+    end
 
-#     def perkalian 
-#         @parameter_a * @parameter_b
-#     end
-# end
+    def perkalian 
+        @parameter_a * @parameter_b
+    end
+end
 
-# calc = CalculatorKool.new(10,5) # Parameter atau isi dari initialize
-# hasil_plus = calc.penjumlahan
-# puts hasil_plus
-# hasil_minus = calc.perkalian
-# puts hasil_minus
+calc = CalculatorKool.new(10,5) # Parameter atau isi dari initialize
+hasil_plus = calc.penjumlahan
+puts hasil_plus
+hasil_minus = calc.perkalian
+puts hasil_minus
 
 
 

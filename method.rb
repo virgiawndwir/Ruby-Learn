@@ -1,6 +1,6 @@
 # # Def [ define ]
 # def halo
-#     puts 'Hello aji'
+#     puts 'Hello fghj'
 # end
 # puts halo
 
@@ -12,10 +12,10 @@
 # puts hai
 
 # # Parameter
-# def numeric(angka1, angka2)
+# def coba(angka1, angka2)
 #     puts angka1 + angka2
 # end
-# numeric(3,9)
+# coba(3,9)
 
 # # Default parameter
 # def surat(nama = 'virgi', email = 'virgi@virgi.com')
@@ -25,7 +25,7 @@
 # surat('Syah')
 # surat('', 'Unim@gmail.com')
 
-# Plain paramenter (parameter polos)
+# # Plain paramenter (parameter polos)
 # def kirim(nama: 'MAO Sama', email: 'virgi@virgi.com')
 #     puts "#{nama} #{email}"
 # end
@@ -51,16 +51,16 @@
 # end
 # puts pembagian.call(12,3)
 
-# splat method
-def menu(*item)
-    puts item[0]
-    puts item[1]
-    puts item[2]
-    puts item[3]
-    puts item[4]
-end
-array1 = ['siapa','rumah','lokasi','disana', 'ASDF']
-menu(array1)
+# # splat method
+# def menu(*item)
+#     puts item[0]
+#     puts item[1]
+#     puts item[2]
+#     puts item[3]
+#     puts item[4]
+# end
+# array1 = ['siapa','rumah','lokasi','disana', 'ASDF']
+# menu(array1)
 # menu(['siapa','rumah','lokasi','disana'])
 
 # # array parameter

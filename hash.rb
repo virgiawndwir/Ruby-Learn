@@ -1,17 +1,17 @@
-# Array of Object variable with hash
+## Array of Object variable with hash
 
-# Hash = manggil isinya
-# kegunaannya untuk data spesifiknya
+## Hash = manggil isinya
+## kegunaannya untuk data spesifiknya
 
-# Hash pertama
+## Hash pertama
 # hash = {'satu' => 1, 'dua' => 2, 'tiga' => 'selamat'} # -> nilai hash adalah element
 # puts hash['tiga'] # -> harus string
 
-# # Hash kedua
+# # # Hash kedua
 # hash = {:satu => 'Katakan', :dua => 'Salah', :tiga => 'Benar'} # -> symbol element
 # puts hash[:satu] # -> harus symbol
 
-# # Hash ketiga
+# # # Hash ketiga
 # hash = {satu: 'Hello', dua: 'World', tiga: 'Home'} # -> default element
 # puts hash[:satu] # -> harus symbol
 
@@ -33,40 +33,44 @@
 # hash[:salary] = 120
 # puts hash
 
-# Saat dijalankan hash[:nilai] maka outputnya => 'belum ada nilai'
+## Saat dijalankan hash[:nilai] maka outputnya => 'belum ada nilai'
 
-puts '----------'
+# puts '----------'
 
-# Menambah dan Menghapus element dalam hash
+## Menambah dan Menghapus element dalam hash
 
 new_hash = Hash.new
 new_hash[:nama] = 'Virgi'
 puts new_hash
 new_hash['kelas'] = 'A-1'
 puts new_hash
-# new_hash[id:] = 123 -> error, harus symbol atau string
+new_hash[:id] = 123 # -> error, harus symbol atau string
+puts new_hash
 
 # Delete()
+
+puts '==============='
 
 new_hash.delete(:nama)
 puts new_hash
 new_hash.delete('kelas')
 puts new_hash
 
+puts "=================\n"
 
 # Looping dalam hash
 
-nash = {nama: 'Uni', kelas: 'A!', tipe: 'normal'}
-nash.each do |element, value|
-    puts "#{element} ==> #{value}"
-end
+# nash = {nama: 'Uni', kelas: 'A!', tipe: 'normal'}
+# nash.each do |element, value|
+#     puts "#{element} ==> #{value}"
+# end
 
-nash.each do |element|
-    puts "#{element} item"
-end
+# nash.each do |element|
+#     puts "#{element} item"
+# end
 
-nash.each_key do |key| # looping untuk key / element
-    puts "ambil #{key}"
-end
-puts "ambil element : #{nash.keys}"
-puts "ambil nilai : #{nash.values}"
+# nash.each_key do |key| # looping untuk key / element
+#     puts "ambil #{key}"
+# end
+# puts "ambil element : #{nash.keys}"
+# puts "ambil nilai : #{nash.values}"

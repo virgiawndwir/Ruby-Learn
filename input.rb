@@ -1,5 +1,5 @@
 puts "Please Enter Name : "
-name = gets.chomp
+name = gets
 print "Enter Password : "
 pass = gets
 

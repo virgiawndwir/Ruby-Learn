@@ -48,16 +48,20 @@
 # puts arr3
 
 # # Join
-# puts [1,2,3,4,5].join(',')
-# puts [1,2,3,4,5].join(' ')
+# array = [1,2,3,4,5,5,6]
+# puts array.join(',')
+# puts array.join(' ')
 
-# Push : Menambahkan item pada array
-arr = [1,2,3,4,5]
-arr.push(6)
-puts "#{arr}"
-arr.push(6,7,8)
-arr << 10
-puts "#{arr}"
+kalimat = %w'hai kamu !'
+puts "#{kalimat}"
+
+# # Push : Menambahkan item pada array
+# arr = [1,2,3,4,5]
+# arr.push(6)
+# puts "#{arr}"
+# arr.push(6,7,8)
+# arr << 10
+# puts "#{arr}"
 
 # # Pop : Menghapus jumlah item dari belakang
 # arr = [1,2,3,4,5]
@@ -67,11 +71,11 @@ puts "#{arr}"
 # puts "#{arr}"
 
 # # Unshift (item) dan Shift (koordinat) (tambah dan hapus dari depan)
-# arr = [1,2,3,4]
-# arr.unshift(0)
-# puts "#{arr}"
-# arr.unshift(-2,-1)
-# puts "#{arr}"
+arr = [1,2,3,4]
+arr.unshift(0)
+puts "#{arr}"
+arr.unshift(-2,-1)
+puts "#{arr}"
 
 # puts '---------------'
 
